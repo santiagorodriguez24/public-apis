@@ -1,13 +1,18 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './styles/app.scss';
+import * as routes from 'routes/routes';
 
-import './css/App.css';
+import Home from 'routes/home/Home';
+import NotFoundPage from 'routes/not-found/NotFound';
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-      {/* 
-        insert your code here
-      */}
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path={routes.ROUTE_HOME} component={Home} />
+        <Route render={(props) => <NotFoundPage {...props} />} />
+      </Switch>
+    </Router>
   );
 }
 

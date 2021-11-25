@@ -1,0 +1,28 @@
+.app-button {
+  width: auto;
+  background-color: $color-yellow;  
+  border: 1px solid $color-yellow-border;
+  border-bottom-width: 2.5px;
+  border-radius: 0.25rem;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+
+  &:hover {
+    color: $color-white;
+    opacity: 0.9;
+  }
+
+  &.disabled {
+    background-color: $color-disabled-yellow;
+    border-color: $color-disabled-yellow-border;
+
+    &:hover {
+      color: $color-white;
+      opacity: 0.9;
+      cursor: not-allowed;
+    }
+  }
+}

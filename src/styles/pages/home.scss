@@ -1,0 +1,76 @@
+.home-table {
+  background-color: $color-white;
+  border: 1px solid $color-dark-gray;
+  border-radius: 0.25rem;
+  border-bottom-width: 0px;
+  margin-bottom: 0px;
+  margin-top: 1.5rem;
+}
+
+.home-table-head {
+  background-color: $color-dark-blue;
+  color: $color-white;
+
+  th {
+    font-weight: 500;
+  }
+}
+
+.home-pagination-container {
+  @extend .basic-row;
+  background-color: $color-white;
+  border: 1px solid $color-dark-gray;
+  border-radius: 0.25rem;
+  border-top-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0.5rem 0rem;
+}
+
+.home-pagination-column {
+  @extend .basic-col;
+}
+
+.pagination-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-pagination-input {
+  display: inline-block;
+  width: 50%;
+  max-width: 50%;
+  margin: 0.5rem 0rem;
+}
+
+.link-button-cell {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.link-button {
+  background-color: $color-yellow;
+  border: 1px solid $color-yellow-border;
+  border-bottom-width: 2.5px;
+  border-radius: 0.25rem;
+  color: $color-white;
+  width: auto;
+  padding: 0.2rem 0.5rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $color-yellow;
+    color: $color-dark-blue;
+  }
+
+  .link-icon {
+    background-color: transparent;
+  }
+}
